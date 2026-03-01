@@ -10,6 +10,11 @@ const scriptname = document.getElementById("scriptname");
 const outputbatch = document.getElementById("outputbatch");
 const copycontentbatch = document.getElementById("copycontentbatch");
 
+const filename = document.getElementById("filename");
+
+const downloadshell = document.getElementById("downloadshell");
+const downloadbatch = document.getElementById("downloadbatch");
+
 
 // Function to generate a Start Script for Batch
 function generateScriptBatch(name, scriptname) {
@@ -24,7 +29,7 @@ function generateScriptBatch(name, scriptname) {
     text += "set SCRIPT_DIR=%~dp0" + "\n";
     text += "" + "\n";
     text += "REM Start the Python Script in the same Folder" + "\n";
-    text += name + "\"%SCRIPT_DIR%" + scriptname + "\n";
+    text += name + "\"%SCRIPT_DIR%" + scriptname + " %*" + "\n";
 
     return text;
 }
@@ -43,7 +48,7 @@ function generateScriptShell(name, scriptname) {
     text += "SCRIPT_DIR=\"$(cd \"$(dirname \"${BASH_SOURCE[0]}\")\" && pwd)\"\n";
     text += "\n";
     text += "# Start the Python Script in the Same Folder\n";
-    text += name + "\"SCRIPT_DIR/" + scriptname + "\"";
+    text += name + "\"SCRIPT_DIR/" + scriptname + "\" \"$@\"";
 
     return text;
 }
@@ -80,3 +85,11 @@ copycontentbatch.addEventListener("click", function () {
             console.error("Error while copying:", err);
         });
 });
+
+
+// Download Shell
+downloadshell.addEventListener("click", function () {});
+
+
+// Download Batch
+downloadbatch.addEventListener("click", function () {});
