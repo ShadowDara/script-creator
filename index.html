@@ -28,16 +28,22 @@
             Grün
         </label>
     </form> -->
-    <p>Programm Name</p>
-    <input id="programname">
 
-    <br>
+    <input id="programname" placeholder="Programm Name">
+    <input id="scriptname" placeholder="Script Name">
 
     <button id="generate">Generate</button>
 
+    <p>Shell</p>
     <pre id="output"></pre>
 
-    <button id="copycontent">Copy Content</button>
+    <p>Batch</p>
+    <pre id="outputbatch"></pre>
+
+    <button id="copycontent">Copy Shell Content</button>
+    <button id="copycontentbatch">Copy Batch Content</button>
+
+    <a href="https://github.com/shadowdara/script-creator">Source Code</a>
 
     <script defer src="logic.js"></script>
 </body>
