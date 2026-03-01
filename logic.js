@@ -10,7 +10,7 @@ const scriptname = document.getElementById("scriptname");
 const outputbatch = document.getElementById("outputbatch");
 const copycontentbatch = document.getElementById("copycontentbatch");
 
-const filename = document.getElementById("filename");
+// const filename = document.getElementById("filename");
 
 // const downloadshell = document.getElementById("downloadshell");
 // const downloadbatch = document.getElementById("downloadbatch");
