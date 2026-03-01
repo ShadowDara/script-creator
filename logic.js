@@ -42,7 +42,7 @@ function generateScriptShell(name, scriptname) {
     text += "#!/bin/bash\n";
     text += "\n";
     text += "# Created by Script Generator\n";
-    text += "https://shadowdara.github.io/script-creator\n";
+    text += "# https://shadowdara.github.io/script-creator\n";
     text += "\n";
     text += "# Get Directory of the Shell Script\n";
     text += "SCRIPT_DIR=\"$(cd \"$(dirname \"${BASH_SOURCE[0]}\")\" && pwd)\"\n";
