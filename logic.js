@@ -48,7 +48,7 @@ function generateScriptShell(name, scriptname) {
     text += "SCRIPT_DIR=\"$(cd \"$(dirname \"${BASH_SOURCE[0]}\")\" && pwd)\"\n";
     text += "\n";
     text += "# Start the Python Script in the Same Folder\n";
-    text += name + " \"SCRIPT_DIR/" + scriptname + "\" \"$@\"";
+    text += name + " \"$SCRIPT_DIR/" + scriptname + "\" \"$@\"";
 
     return text;
 }
