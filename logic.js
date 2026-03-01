@@ -12,8 +12,8 @@ const copycontentbatch = document.getElementById("copycontentbatch");
 
 const filename = document.getElementById("filename");
 
-const downloadshell = document.getElementById("downloadshell");
-const downloadbatch = document.getElementById("downloadbatch");
+// const downloadshell = document.getElementById("downloadshell");
+// const downloadbatch = document.getElementById("downloadbatch");
 
 
 // Function to generate a Start Script for Batch
@@ -87,9 +87,9 @@ copycontentbatch.addEventListener("click", function () {
 });
 
 
-// Download Shell
-downloadshell.addEventListener("click", function () {});
+// // Download Shell
+// downloadshell.addEventListener("click", function () {});
 
 
-// Download Batch
-downloadbatch.addEventListener("click", function () {});
+// // Download Batch
+// downloadbatch.addEventListener("click", function () {});
