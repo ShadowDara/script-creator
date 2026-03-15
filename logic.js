@@ -29,7 +29,7 @@ function generateScriptBatch(name, scriptname) {
     text += "set SCRIPT_DIR=%~dp0" + "\n";
     text += "" + "\n";
     text += "REM Start the Python Script in the same Folder" + "\n";
-    text += name + " \"%SCRIPT_DIR%" + scriptname + " %*" + "\n";
+    text += name + " \"%SCRIPT_DIR%" + scriptname + "\" %*" + "\n";
 
     return text;
 }
